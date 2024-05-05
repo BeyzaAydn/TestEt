@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <style>
+
+#tahminEt {
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mx-auto">
+                <div class="card">
+                    <div class="card-body text-center">
+                      <input type="number" class="form-control" id="gelenSayi"/>
+                        <button class="btn btn-primary text-center" my=2, id="tahminEt">Tahmin Et</button>
+                    </div>
+                    
+                        <div id="bilgi-mesaj" class="card-footer"></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-6 text-center">
+                <div class="card">
+                    <div class="card-body" id="tahmin-hak">
+                      
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="card">
+                    <div class="card-body" id="seviye">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3 mx-auto">
+                <div class="card">
+                    <div class="card-body text-center" id="süre-sayaci">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul>
+            <li>Uygulama çlıştırıldığında arkağlanda 1 ile 10 arasında rastgele bir sayı tutulacak</li>
+            <li>Saniye 30'dan geriye sayacak</li>
+            <li>Kullanıcı bir tahminde bulunnacak
+                <ol>
+                    <li>Eğer kullanıcının tahmini tutulan değerden küçük ise bilgilendirme mesajı olarak "lütfen daha büyük bir değer girin" yazacak. Tahmin hak bir kez azaltılacak</li>
+                    <li>Eğer kullanıcının tahmini tutulan değerden büyük ise bilgilendirme mesajı olarak "lütfen daha küçük bir değer girin" yazacak. Tahmin hak bir kez azaltılacak</li>
+                    <li>Eğer kullanıcı doğru tahminde bulunmuşsa tahmin hak <strong>5</strong> olacak seviye <strong>2</strong> olacak. Arından 1 ile 20 arasında sayı tutulacak</li>
+                    <li>Eğer saniye 0 olursa input ve button pasif hale getirilecek. (isterseniz sayfadan kaldıradabilirsiniz.)</li>
+                </ol>
+
+            </li>
+        </ul>
+    </div>
+    <script src="js/cart.js"></script>
+</body>
+</html>
